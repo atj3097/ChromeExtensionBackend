@@ -1,6 +1,7 @@
 from django.db import models
 
 # Create your models here.
+# Pickup @ the Activating Models Section Of Tutorial
 from django.db import models
 
 class Business(models.Model):
