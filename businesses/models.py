@@ -10,8 +10,6 @@ class Business(models.Model):
     email = models.EmailField
     logo = models.ImageField
 
-
-
 class FeatureProduct(models.Model):
     belongsTo = models.ForeignKey(Business, blank=True, null=True, on_delete=models.CASCADE)
     product_name = models.CharField(max_length=200)
