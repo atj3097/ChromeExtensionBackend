@@ -1,6 +1,7 @@
 from django.db import models
 
 # Create your models here.
+# Pickup @ the Activating Models Section Of Tutorial
 from django.db import models
 
 class Business(models.Model):
@@ -8,8 +9,6 @@ class Business(models.Model):
     location = models.CharField(max_length=200)
     email = models.EmailField
     logo = models.ImageField
-
-
 
 class FeatureProduct(models.Model):
     belongsTo = models.ForeignKey(Business, blank=True, null=True, on_delete=models.CASCADE)
